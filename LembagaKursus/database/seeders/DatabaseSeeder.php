@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([PesertaSeeder::class]);
+        \app\Models\Peserta::factory(10)->create();
     }
 }

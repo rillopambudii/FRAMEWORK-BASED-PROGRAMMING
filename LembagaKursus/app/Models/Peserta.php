@@ -9,6 +9,6 @@ class Peserta extends Model
 {
     use HasFactory;
     
-    protected $table = 'peserta';
+    protected $table = 'pesertas';
     protected $fillable = ['nama', 'jenis kelas', 'tanggal masuk'];
 }

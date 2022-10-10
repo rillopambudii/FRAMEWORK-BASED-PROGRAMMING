@@ -19,17 +19,16 @@ class PesertaSeeder extends Seeder
             [
                 'nama' => 'rillo',
                 'jenis kelas' => 'Regular',
-                'tanggal masuk' => '2002',
+                'tanggal masuk' => 2002,
             ],
             [
                 'nama' => 'rillo',
                 'jenis kelas' => 'Regular',
-                'tanggal masuk' => '2002',
+                'tanggal masuk' => 2003,
             ],
         ];
         foreach ($Peserta as $pst ) {
-            \app\Models\peserta::firstOrCreate($pst);
-            
+            Peserta::firstOrCreate($pst);
         }
         
     }
